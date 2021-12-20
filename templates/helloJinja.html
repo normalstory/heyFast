@@ -5,12 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jinja2 world</title>
-
+    <style>
+        .myDiv {
+          background-color: lightblue;
+          padding : 3em
+        }
+        </style>
 </head>
 <body>
-    {% if users %}
-    "hello jinja 2 to.."
-    {% endif %}
+
+    <div class="myDiv">
+        <h1> 풰스트 에이.피.아이 </h1>
+        <p> 웰컴 투 진자월드</p>
+    
+        {% if users %}
+        "feat. jinja 2 to.."
+        {% endif %}
+    
+        <br/><br/>
+        <button type="button" onclick="https://jinja2docs.readthedocs.io/en/stable/">더 알아보기</button>
+    </div>
 
 </body>
 </html>
