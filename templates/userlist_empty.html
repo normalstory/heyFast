@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-color: rgba(148, 224, 253, 0.5);  /* 50% 불투명도 */
+        }
+    </style>
+</head>
+<body>
+        <h3> 예) 01 목록 읽어오기</h3>
+        <table>
+                <tr>
+                    <td class="bg">1</td>
+                    <td class="bg">홍길동</td>
+                    <td class="bg">홍@길동.com</td>
+                    <td class="bg">아이럽춘</td>
+                </tr>
+                <tr>
+                    <td>없으면 ->  No user :(</td>
+                </tr>
+        </table>
+
+        <h3> 예) 02 생성하기 </h3>
+        <table id="userTable">
+            <tr>
+                <td><input type="text" placeholder="이름을 입력하세요" value="" id="name_"/></td>
+                <td><input type="text" placeholder="이메일을 입력하세요" value="" id="email_"/></td>
+                <td><input type="text" placeholder="패스워드를 입력하세요" value="" id="password_"/></td>
+                <td><button onclick="postUser()">등록하기 </button></td>
+            </tr>
+        </table>
+</body>
+</html>
